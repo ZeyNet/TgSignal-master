@@ -1,0 +1,19 @@
+name: TgSignal
+version: 2.1
+api-version: 1.15
+author: peyman,Ashesh3,ZeyNet
+main: Main.TgSignal.Main.TgSignal
+commands:
+  tgsreload:
+     description: reload TgSignal
+     usage: /tgsreload
+permissions:
+  tgs.*:
+    default: op
+    description: Выдаёт все права
+    children:
+      tgs.reload: true
+  tgs.reload:
+    default: op
+    description: Права на команду /reload
+
